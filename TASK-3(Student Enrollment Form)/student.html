@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+    
+    <h1>STUDENT ENROLLMENT FORM</h1>
+    <hr>
+    <div class="box">
+        <div class="container">
+
+            <form action="" id="form">
+
+                <div class="frame">
+                    <label for="name"><b>Name:</b></label>
+                    <input type="text" name="name" class="de" placeholder="Enter Name" required>
+                </div>
+
+                <div class="frame">
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" name="email" class="de" placeholder="Enter Email-id" required>
+                </div>
+
+                <div class="frame">
+                    <label for="website"><b>Website:</b></label>
+                    <input type="url" name="name" class="de" placeholder="Enter website" required>
+                </div>
+
+                <div class="frame">
+                    <label for="image"><b>Image:</b></label>
+                    <input type="file" name="name" class="de" id="img" alt="student image" accept="image/*" onchange="loadFile(event)" required>
+                </div>
+
+                <div class="frame2">
+                    <label for="gender"><b>Gender:</b></label>
+
+                    <div class="r">
+                        <div class="r1">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="">Male</label>
+                        </div>
+
+                        <div class="r1">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="">Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <input class="submit" type="submit" value="Enroll Student">
+                <input class="reset" type="reset" value="Clear">
+
+            </form>
+        </div>
+       <div class="display">
+        <h2>ENROLLED STUDENT</h2>
+       </div>
+                   
+    <script src="student.js"></script>
+</body>
+
+</html>
